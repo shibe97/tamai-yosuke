@@ -1,13 +1,14 @@
 <template>
   <section>
     <v-sheet color="#fafafa" height="100vh">
-      <v-container fill-height fluid :px-12="$vuetify.breakpoint.mdAndUp">
+      <v-container fill-height fluid>
         <v-col align="center">
           <v-img
             :src="require('@/assets/hero.svg')"
             max-height="550"
             max-width="600"
             style="transform: translate(-4%, -5%)"
+            class="hidden-xs-and-up"
           />
 
           <h1
