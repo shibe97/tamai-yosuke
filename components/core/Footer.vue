@@ -1,19 +1,15 @@
 <template>
-  <v-footer color="grey lighten-3 px-6 py-3" height="auto" min-height="64">
-    <v-row :justify="$vuetify.breakpoint.mdAndUp ? 'space-between' : 'center'">
-      <a href="#">
-        email@example.com
-      </a>
+  <v-footer color="grey lighten-3">
+    <v-row justify="center">
+      2017-2019
 
-      <v-col class="hidden-md-and-up" cols="12" />
-
-      <div>
+      <!-- <div>
         <a href="#">Facebook</a>
         &nbsp;
         <a href="#">Twitter</a>
         &nbsp;
         <a href="#">Github</a>
-      </div>
+      </div> -->
     </v-row>
   </v-footer>
 </template>

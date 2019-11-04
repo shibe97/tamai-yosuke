@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app flat color="#fafafa">
+  <v-app-bar flat color="#fafafa" absolute>
     tamai-yosuke.com
     <v-spacer />
     <template v-if="$vuetify.breakpoint.mdAndUp">
