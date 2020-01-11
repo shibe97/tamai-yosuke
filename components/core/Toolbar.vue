@@ -1,6 +1,6 @@
 <template>
-  <v-app-bar flat color="#fafafa" absolute>
-    tamai-yosuke.com
+  <v-app-bar app flat color="#fafafa">
+    <a href="/" class="site-title">tamai-yosuke.com</a>
     <v-spacer />
     <template v-if="$vuetify.breakpoint.mdAndUp">
       <v-btn
@@ -44,15 +44,15 @@ export default {
         text: 'Home'
       },
       {
-        to: '/news',
-        text: 'News'
+        to: '/blog',
+        text: 'Blog'
       },
       {
         to: '/profile',
         text: 'Profile'
       },
       {
-        to: '/contact',
+        to: '/#contact',
         text: 'Contact'
       },
       {
@@ -71,3 +71,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+.site-title {
+  font-family: 'Gloria Hallelujah', cursive !important;
+  text-decoration: none;
+}
+</style>

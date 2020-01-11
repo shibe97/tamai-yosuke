@@ -1,6 +1,6 @@
 <template>
   <div align="center">
-    <h1 class="mt-10">
+    <h1 class="mt-10 mb-5">
       <slot />
     </h1>
   </div>
@@ -11,8 +11,8 @@ h1 {
   position: relative;
   display: inline-block;
   padding: 0 55px;
-  font-size: 3rem;
-  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  font-family: 'Gloria Hallelujah', cursive !important;
 }
 
 h1:before,

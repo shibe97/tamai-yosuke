@@ -1,0 +1,347 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191231.034916.7236.0.001.json",
+    "dumpEventTime": "2019-12-31T03:49:16Z",
+    "dumpEventTimeStamp": "1577764156188",
+    "processId": 7236,
+    "cwd": "/home/ubuntu/nuxt-projects/tamai-yosuke",
+    "commandLine": [
+      "/usr/bin/node",
+      "/home/ubuntu/nuxt-projects/tamai-yosuke/node_modules/.bin/nuxt",
+      "--hostname",
+      "192.168.11.40"
+    ],
+    "nodejsVersion": "v12.10.0",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.24",
+    "wordSize": 32,
+    "arch": "arm",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.10.0",
+      "v8": "7.6.303.29-node.16",
+      "uv": "1.31.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.10.0/node-v12.10.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.2.8",
+    "osVersion": "#2 SMP Thu Apr 25 04:20:11 CST 2019",
+    "osMachine": "armv7l",
+    "cpus": [
+      {
+        "model": "Annapurna Labs Alpine AL212 Dual-core ARM Cortex-A15 CPU @ 1.70GHz",
+        "speed": 0,
+        "user": 5851573300,
+        "nice": 969786600,
+        "sys": 3677471300,
+        "idle": 82769278600,
+        "irq": 0
+      },
+      {
+        "model": "Annapurna Labs Alpine AL212 Dual-core ARM Cortex-A15 CPU @ 1.70GHz",
+        "speed": 0,
+        "user": 6144671800,
+        "nice": 950254700,
+        "sys": 3667646400,
+        "idle": 82710379900,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "00:16:3e:16:c9:d8",
+        "address": "192.168.11.40",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "00:16:3e:16:c9:d8",
+        "address": "192.168.11.44",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "00:16:3e:16:c9:d8",
+        "address": "fe80::216:3eff:fe16:c9d8",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 36
+      }
+    ],
+    "host": "ubuntu-bionic-armhf-2"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+  ],
+  "javascriptHeap": {
+    "totalMemory": 263860224,
+    "totalCommittedMemory": 262407820,
+    "usedMemory": 249939448,
+    "availableMemory": 14369248,
+    "memoryLimit": 268435456,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 21684,
+        "capacity": 261988,
+        "used": 21528,
+        "available": 240460
+      },
+      "new_space": {
+        "memorySize": 4194304,
+        "committedMemory": 3932300,
+        "capacity": 2095904,
+        "used": 180284,
+        "available": 1915620
+      },
+      "old_space": {
+        "memorySize": 175951872,
+        "committedMemory": 175297500,
+        "capacity": 173502076,
+        "used": 168313580,
+        "available": 5188496
+      },
+      "code_space": {
+        "memorySize": 3305472,
+        "committedMemory": 3087200,
+        "capacity": 3145728,
+        "used": 2792192,
+        "available": 353536
+      },
+      "map_space": {
+        "memorySize": 4460544,
+        "committedMemory": 4383248,
+        "capacity": 3207920,
+        "used": 3207920,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 74493952,
+        "committedMemory": 74493952,
+        "capacity": 74337416,
+        "used": 74337416,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 1191936,
+        "committedMemory": 1191936,
+        "capacity": 1086528,
+        "used": 1086528,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 2095904,
+        "used": 0,
+        "available": 2095904
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 304.86,
+    "kernelCpuSeconds": 5.91,
+    "cpuConsumptionPercent": 6.58551,
+    "maxRss": 302972928,
+    "pageFaults": {
+      "IORequired": 412,
+      "IONotRequired": 488595
+    },
+    "fsActivity": {
+      "reads": 268104,
+      "writes": 1016
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 154.41,
+    "kernelCpuSeconds": 3.25,
+    "cpuConsumptionPercent": 3.34096,
+    "fsActivity": {
+      "reads": 204304,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "npm_package_devDependencies__nuxtjs_eslint_module": "^1.0.0",
+    "MAIL": "/var/mail/ubuntu",
+    "USER": "ubuntu",
+    "SSH_CLIENT": "192.168.11.36 49507 22",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_user_agent": "yarn/1.17.3 npm/? node/v12.10.0 linux arm",
+    "npm_config_bin_links": "true",
+    "npm_node_execpath": "/usr/bin/node",
+    "npm_config_init_version": "1.0.0",
+    "SHLVL": "4",
+    "OLDPWD": "/home/ubuntu/.vscode-server/bin/26076a4de974ead31f97692a0d32f90d735645c0",
+    "HOME": "/home/ubuntu",
+    "npm_package_devDependencies_eslint_plugin_nuxt": ">=0.4.2",
+    "TERM_PROGRAM_VERSION": "1.41.1",
+    "VSCODE_IPC_HOOK_CLI": "/tmp/vscode-ipc-40bd6654-7a9b-40c2-867f-b64b5bae5b84.sock",
+    "npm_package_devDependencies_eslint_config_prettier": "^4.1.0",
+    "npm_config_init_license": "MIT",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "YARN_WRAP_OUTPUT": "false",
+    "npm_package_devDependencies__nuxtjs_vuetify": "^1.0.0",
+    "npm_config_version_tag_prefix": "v",
+    "COLORTERM": "truecolor",
+    "PIPE_LOGGING": "true",
+    "npm_package_description": "tamai-yosuke.com",
+    "npm_package_readmeFilename": "README.md",
+    "npm_package_dependencies_nuxt": "^2.0.0",
+    "npm_package_devDependencies_prettier": "^1.16.4",
+    "npm_package_scripts_dev": "nuxt",
+    "LOGNAME": "ubuntu",
+    "_": "/usr/bin/yarn",
+    "npm_package_devDependencies_node_sass": "^4.12.0",
+    "npm_package_private": "true",
+    "npm_package_scripts_lint": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "XDG_SESSION_ID": "6474",
+    "TERM": "xterm-256color",
+    "npm_package_scripts_start": "nuxt start",
+    "npm_config_ignore_scripts": "",
+    "PATH": "/tmp/yarn--1577759436660-0.9057303135581092:/home/ubuntu/nuxt-projects/tamai-yosuke/node_modules/.bin:/home/ubuntu/.config/yarn/link/node_modules/.bin:/home/ubuntu/.yarn/bin:/usr/libexec/lib/node_modules/npm/bin/node-gyp-bin:/usr/lib/node_modules/npm/bin/node-gyp-bin:/usr/bin/node_modules/npm/bin/node-gyp-bin:/home/ubuntu/.vscode-server/bin/26076a4de974ead31f97692a0d32f90d735645c0/bin:/home/ubuntu/.vscode-server/bin/26076a4de974ead31f97692a0d32f90d735645c0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games",
+    "NODE": "/usr/bin/node",
+    "npm_package_name": "tamai-yosuke",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "LANG": "en_US.UTF-8",
+    "npm_package_devDependencies_eslint": "^6.1.0",
+    "npm_package_devDependencies__nuxtjs_eslint_config": "^1.0.1",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "TERM_PROGRAM": "vscode",
+    "npm_lifecycle_script": "nuxt",
+    "npm_config_version_git_message": "v%s",
+    "SHELL": "/bin/bash",
+    "npm_lifecycle_event": "dev",
+    "npm_package_version": "1.0.0",
+    "VERBOSE_LOGGING": "true",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"dev\"],\"original\":[\"dev\",\"--hostname\",\"192.168.11.40\"]}",
+    "npm_package_scripts_build": "nuxt build",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "npm_package_devDependencies_sass_loader": "^8.0.0",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_git_sign": "",
+    "npm_package_scripts_generate": "nuxt generate",
+    "npm_config_strict_ssl": "true",
+    "npm_package_devDependencies_eslint_plugin_prettier": "^3.0.1",
+    "PWD": "/home/ubuntu/nuxt-projects/tamai-yosuke",
+    "npm_execpath": "/usr/lib/node_modules/yarn/bin/yarn.js",
+    "SSH_CONNECTION": "192.168.11.36 49507 192.168.11.40 22",
+    "npm_package_author_name": "Y.Tamai",
+    "AMD_ENTRYPOINT": "vs/server/remoteExtensionHostProcess",
+    "npm_config_save_prefix": "^",
+    "npm_config_ignore_optional": "",
+    "npm_package_devDependencies_babel_eslint": "^10.0.1",
+    "npm_package_dependencies__nuxtjs_axios": "^5.3.6",
+    "INIT_CWD": "/home/ubuntu/nuxt-projects/tamai-yosuke",
+    "NODE_ENV": "development",
+    "_AXIOS_BASE_URL_": "http://192.168.11.40:3000/",
+    "VUE_ENV": "server"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 16777216,
+      "hard": 16777216
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 7845,
+      "hard": 7845
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/arm-linux-gnueabihf/libdl.so.2",
+    "/lib/arm-linux-gnueabihf/librt.so.1",
+    "/usr/lib/arm-linux-gnueabihf/libstdc++.so.6",
+    "/lib/arm-linux-gnueabihf/libm.so.6",
+    "/lib/arm-linux-gnueabihf/libgcc_s.so.1",
+    "/lib/arm-linux-gnueabihf/libpthread.so.0",
+    "/lib/arm-linux-gnueabihf/libc.so.6",
+    "/lib/ld-linux-armhf.so.3",
+    "/home/ubuntu/nuxt-projects/tamai-yosuke/node_modules/fibers/bin/linux-arm-72-glibc/fibers.node"
+  ]
+}

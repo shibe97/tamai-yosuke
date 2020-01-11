@@ -1,13 +1,14 @@
 import colors from 'vuetify/es5/util/colors'
+import axios from 'axios'
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   /*
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    titleTemplate: '%s - ' + 'tamai-yosuke official website',
+    title: 'tamai-yosuke official website' || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -33,7 +34,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/style/style.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -87,5 +88,42 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  // generate: {
+  //   routes() {
+  //     return fetch('https://tamasuke.microcms.io/api/v1/blog', {
+  //       headers: {
+  //         'X-API-KEY': '6cb11011-fa2f-4bd0-86b4-3fd32cc0c42a'
+  //       }
+  //     })
+  //       .then((res) => res.json())
+  //       .then((json) => {
+  //         return [...json.contents.map((content) => `blog/${content.id}`)]
+  //       })
+  //   }
+  // }
+  // generate: {
+  //   routes(callback) {
+  //     const blogData = axios
+  //       .get('https://tamasuke.microcms.io/api/v1/blog', {
+  //         headers: {
+  //           'X-API-KEY': '6cb11011-fa2f-4bd0-86b4-3fd32cc0c42a'
+  //         }
+  //       })
+  //       .then((res) => res.json())
+  //   }
+  // }
+  generate: {
+    routes() {
+      // 使用するAPIから情報を取得
+      return axios
+        .get('https://tamasuke.microcms.io/api/v1/blog', {
+          headers: { 'X-API-KEY': '6cb11011-fa2f-4bd0-86b4-3fd32cc0c42a' }
+        })
+        .then((res) => res.json())
+      // .then((json) => {
+      //   return [...json.contents.map((content) => `blog/${content.id}`)]
+      // })
+    }
   }
 }
